@@ -48,7 +48,7 @@ def random_numbers():
   Semoga hari ini kaka beruntung :)
   Tunggu ya kak jgn di tutup....
   ''')
-  with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
+  with concurrent.futures.ThreadPoolExecutor(max_workers=30) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
   print('\n  Sudah selesai kak')
 
@@ -83,7 +83,7 @@ def random_email():
   Semoga hari ini kaka beruntung :)
   Tunggu ya kak jgn di tutup....
   ''')
-  with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
+  with concurrent.futures.ThreadPoolExecutor(max_workers=30) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
   print('\n  Sudah selesai kak')
 
