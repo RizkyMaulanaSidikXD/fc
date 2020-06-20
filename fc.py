@@ -43,7 +43,7 @@ def random_numbers():
   jml=int(input('''
   Masukan jumlah nomor yang akan dibuat contoh: 10
   Jumlah: '''))
-  [data.append({'user': str(e), 'pw':[str(e[5:]), str(e[6:])]}) for e in [str(kode)+''.join(['%s'%(randint(0,9)) for i in range(0,8)]) for e in range(jml)]]
+  [data.append({'user': str(e), 'pw':[str(e[5:]), str(e[6:]), str(e[7:])]}) for e in [str(kode)+''.join(['%s'%(randint(0,9)) for i in range(0,8)]) for e in range(jml)]]
   print('''
   Semoga hari ini kaka beruntung :)
   Tunggu ya kak jgn di tutup....
